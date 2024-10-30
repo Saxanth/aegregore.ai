@@ -23,7 +23,7 @@
     Navigate to the directory containing your project and install the required dependencies by running the following command:
 
     ```powershell
-    pip install -r requirements.txt
+    pip install -U --force-reinstall --no-warn-script-location -r ./apps/services/requirements.txt
     ```
 
     This will install all the necessary python libraries for the application to run smoothly. If you encounter any issues, please ensure that you have the latest version of pip installed and try again. If the problem persists, feel free to reach out for assistance on our [Discord Server](https://discord.gg/Wfdfgkg968).
