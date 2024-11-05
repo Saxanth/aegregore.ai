@@ -3,9 +3,9 @@ from services.models import NomicModel, CodestralModel, FluxModel
 
 def main():
     model_list = { item['name'] for item in ollama.list()['models'][:-1] }
-    prompt = "a simple python script to print a range of integers in the console."    
     print ("Ollama Models:\n" + '\n'.join(model_list))
 
+    prompt = "a simple python script to print a range of integers in the console."
     result = CodestralModel.generate_code(
         user_message=prompt,
         api_params={
